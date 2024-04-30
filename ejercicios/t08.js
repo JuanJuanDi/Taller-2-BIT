@@ -6,11 +6,10 @@ let suposicionUsuario;
 while (true) {
     suposicionUsuario = parseInt(prompt("Adivina el número (entre 1 y 10):"));
 
-    // Verificar si la suposición es correcta
     if (suposicionUsuario === numeroAleatorio) {
         console.log("¡Felicitaciones! ¡Adivinaste el número correctamente!");
         alert("¡Felicitaciones! ¡Adivinaste el número correctamente!");
-        break; // Salir del bucle
+        break; 
     } else if (suposicionUsuario < numeroAleatorio) {
         alert("La suposición es demasiado baja. Inténtalo de nuevo.");
         console.log("La suposición es demasiado baja. Inténtalo de nuevo.");
